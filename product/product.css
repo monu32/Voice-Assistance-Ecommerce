@@ -1,0 +1,58 @@
+#product{
+    display: grid;
+    grid-template-columns:45% 5% 45%;
+    height: 550px;
+    margin: 50px;
+}
+
+.productContent{
+    display: flex;
+    flex-direction: column;
+}
+
+#productTitle{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+}
+
+#productDesc{
+    width:  inherit;
+    height: inherit;
+}
+
+#productDesc{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+#product img{
+    width: 100%;
+    height: inherit;
+    object-fit: contain;
+}
+
+#addtocart{
+    padding:10px;
+    background-color: black;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-stretch: 100%;
+    font-weight: 600;    
+}
+
+
+#addtocart:hover{
+    cursor: pointer;
+}
+
+#product .wishlistIconAdd,.wishlistIconRemove{
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+    color: rgb(32, 33, 36,0.3);;
+}
+
+#product .wishlistIconRemove{
+    color: black;
+}

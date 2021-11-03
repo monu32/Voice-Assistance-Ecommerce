@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <title>Document</title>
+    <script>  
+        $(function(){ 
+          $("#header").load("../header/header.html");  
+          $.getScript('../voice.js')
+        }); 
+    </script>  
+</head>
+<body>
+    <div id="header"></div>
+    <img class="home-image" style="width: 100%;height: 100%;"src="../assets/homeImage.png"></img>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<header>
+<div id="top-header-section">
+    <div class="header-logo" id="microphone" data-status="off">
+        <img id="microphone-off" src="../assets/microphoneIcon-off.png"/>
+        <img id="microphone-on" src="../assets/microphoneIcon-on.png"/>
+    </div>
+    <div class="header-logo">
+        <a href="/wishlist/wishlist.html" id="wishlist"><img src="../assets/wishlistIcon.png"/></a>
+    </div>
+    <div class="header-logo">
+        <a href="/account"><img src="../assets/account.png"/></a>
+    </div>
+    <div class="header-logo">
+        <a href=/cart/cart.html id="cart"><img src="../assets/cartLogo.png"/></a>
+    </div>
+</div>
+<nav>
+    <ul>
+        <li><a class="navbar-item" href="/mobile">Mobile</a></li>
+        <li><a class="navbar-item" href="fashion">Fashion</a></li>
+        <li><a class="navbar-item" href="/electronics">Electronics</a></li>
+        <li><a class="navbar-item" href="/travel">Travel</a></li>
+        <li><a class="navbar-item" href="/appliances">Appliances</a></li>
+        <li><a class="navbar-item" href="/furniture">Furniture</a></li>
+        <li><a class="navbar-item" href="/grocery">Grocery</a></li>
+        <li><a class="navbar-item" href="/computers">Computers</a></li>
+    </ul>
+</nav>        
+</header>
+
+<script>
+    document.getElementById('microphone-on').style.display="none";
+    document.getElementById('microphone-off').style.display="inline";
+
+    document.getElementById("microphone").addEventListener("click",function(){
+
+        if(document.getElementById('microphone-off').style.display==="none"){
+            document.getElementById('microphone-off').style.display="inline";
+            document.getElementById('microphone-on').style.display="none";
+        }
+        else{
+            document.getElementById('microphone-on').style.display="inline";
+            document.getElementById('microphone-off').style.display="none";
+        }
+    })
+</script>
+

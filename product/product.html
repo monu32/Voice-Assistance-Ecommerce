@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="./product.css">
+    <script>  
+        $(function(){ 
+          $("#header").load("../header/header.html");  
+          $.getScript('../voice.js');
+        }); 
+    </script> 
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="product">
+        <img id="productImage" src=""/>
+        <span data-eventtype='wishlisteventadd' id="addtowishlist" class="wishlistIconAdd">&#x2764;</span>
+        <div class="productContent">
+            <p id="productTitle"></p>
+            <p id="productDesc" class="desc"></p>    
+            <div class="productBtn">
+                <button id="addtocart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+<script src="../global.js"></script>
+<script src="./product.js"></script>
+</body>
+</html>

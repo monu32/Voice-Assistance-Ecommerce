@@ -1,0 +1,36 @@
+#wishlist-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:50px;
+}
+
+#wishlist-container .item{
+    display: flex;
+    width: 300px;
+    height:350px;
+    border:1px solid white;
+    padding: 10px 5px 0px 5px;
+
+}
+
+#wishlist-container img{
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+}
+
+#wishlist-container .item:hover{
+    border: 1px solid rgb(32, 33, 36,0.3);
+    border-radius: 10px;
+}
+
+#wishlist-container .item > div{
+    text-align: center;
+}
+
+#wishlist-container .item > span{
+    font-size: 20px;
+    cursor: pointer;
+    height: max-content;
+}
